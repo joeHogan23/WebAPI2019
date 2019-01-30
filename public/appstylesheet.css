@@ -1,0 +1,99 @@
+@font-face{
+    font-family: titleFont;
+    src: local(AldrichRegular) format('truetype');
+}
+
+
+.collapse{
+    margin: 0px 10px;
+}
+
+#content-container{
+    width:100%;
+    height:100%;
+}
+
+.container-fluid{
+    background: rgba(0,0,0,.7);
+    /* justify-content: center; */
+}
+
+.navbar-brand {
+    font-display: auto;
+    font-family: 'Average Sans', sans-serif;
+    font-size: 20px;
+    height: 50px;
+}
+
+#name{
+    color: beige;
+}
+
+.navbar-toggle{
+    background: none;
+}
+
+.navbar{
+    /* position: fixed; */
+    border: none;
+    background: none;
+    /* opacity: 0; */
+    height: 50px;
+    width: auto;
+}
+
+.my-explanation-for-this-perfect-list{
+
+}
+
+.btn, .list-item-a, .list-item-b{
+    text-align: left;
+    overflow: hidden;
+    font-family: 'Raleway', sans-serif;
+    font-size-adjust: auto;
+    padding-top: 12px;
+    margin-top: 0px;
+    border-radius: 0px;
+    height: 49px;
+}
+
+.btn, .my-explanation-for-this-perfect-list, #list-title{
+    color: #DBDBDB;
+}
+
+.my-explanation-for-this-perfect-list, #list-title{
+    width:100%;
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+    padding: 20px;
+}
+
+.list-item-a, .list-item-b{
+    width: 100% ;
+    padding-left: 50px;
+    margin-left: -38px;
+}
+
+.list-item-a{
+    color: #002452;
+    background-color: beige; 
+}
+
+.list-item-b{
+    color: beige;
+
+}
+
+.btn:hover{
+    color: #DBDBDB;
+    border-radius: 0px;
+}
+
+.bullet-Icon{
+    width: 14px;
+    padding-bottom: 3px;
+}
+
+body{
+    background-color: #002452;
+}

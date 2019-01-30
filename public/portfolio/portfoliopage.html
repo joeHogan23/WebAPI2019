@@ -1,0 +1,260 @@
+<!doctype html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Joseph Sierejko - Programmer</title>
+    
+      <!--LOAD RESOURCES------------------------->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/jquery.color-animation/1/mainfile"></script>
+        <link rel="stylesheet" type="text/css" href="/stylesheet.css"/>
+        <link rel="stylesheet" type="text/css" href="/graphics-carousel.css"/>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" type="text/css" href="/preloadSS.css"/>
+
+        <link href="https://fonts.googleapis.com/css?family=Average+Sans|Raleway" rel="stylesheet">
+        <script type="text/javascript" src="/jquery.jcarousel.min.js"></script>
+        <script type="text/javascript" src="/bordercoloranimate/bordercoloranimate.min.js"></script>
+        <script type="text/javascript" src="/graphics-carousel.js"></script>
+        <script type="text/javascript" src="/animations.js"></script>
+        <script type="text/javascript" src="/preload.js"></script>
+
+      <!--//END LOAD RESOURCES------------------->
+    </head>
+
+    <body>    
+
+        <div id = "preloader">
+            
+            <div class="logo-container">
+                <div class = "dot" id = "dotA"></div>
+                <div class = "dot" id = "dotB"></div> 
+            </div>
+            
+            <div class="loader-circle-container">
+                <div class = "loader-circle" id = "topCircle"></div>
+            </div>
+        </div>
+        <div id = "container">
+            <header><div class="header-bg"></div></header>
+            <div class = "video-wall" id = "video-wall">
+                <video autoplay = 1 loop= 1 muted= 1 style="; margin: 0; z-index: -1; transform: translate(0%,0%); visibility: visible; opacity: 1; width:100%; height:auto;  background-size: cover; "><source src="/redRockFarmer.mp4" type="video/mp4"></video>
+            </div>
+        
+        <div class ="navbar-container">  
+            <nav class = "navbar navbar-inverse navbar-fixed-top">
+                <div class = "container-fluid" >    
+                    <div class = "navbar-header">
+                        <b class = "navbar-brand" id = "name">Joseph Sierejko</b>
+
+                        <button type = "button" class = "navbar-toggle" id = "nav-tab" data-toggle = "collapse" data-target="#mynavbar">
+                            <span class = "icon-bar"></span>
+                            <span class = "icon-bar"></span>
+                            <span class = "icon-bar"></span>
+                        </button>
+                        
+                    </div>
+                    <div class = "collapse navbar-collapse" id ="mynavbar">   
+                        <ul class = "nav navbar-nav" id = "menuItems">
+
+                            <li class = "btn" id = "project-workBtn" data-target="#vgHeader"><img src="/vgIcon.png" class = "header-thumbnail" id = "vg-Icon">Video Game Work</li>
+
+                            <li input class = "btn" type = "button" id = "graphics-work-btn" data-target="#gdHeader"><img src="/gdIcon.png" class = "header-thumbnail" id = "gd-Icon">Graphic Design</li>
+
+                            <li input class = "btn" type = "button" id = "aboutBtn" data-target="#aboutHeader"><img src="/aboutIcon.png" class = "header-thumbnail" id = "about-Icon">About</li>
+
+                            <li input class = "btn" type = "button" id = "resumeBtn" data-target="#vgHeader"><img src="/resumeIcon.png" class = "header-thumbnail" id = "resume-Icon" href = "RRFGamePage">Resume</li>
+                        </ul>
+                    </div>    
+                </div>
+            </nav>
+            </div>
+            
+            <div class = "section-header" id = "vgHeader"><h2>Projects</h2></div> 
+            <div class = "subsection-header" id = "vgSubHeader"><h4>Click on Panels to see more Info</h4></div>
+                
+            <div class = "project-section">
+                <div id = "panel-container">
+                    <div id = "exit-button" class = "RedRockExit"></div>
+                    <div id = "panel-content">
+                        <div id = "panel-border">            
+                            <p class ="popup-info" id="infoGame1">Test1</p>
+                            <p class ="popup-info" id ="infoGame2">Test2</p>
+                        </div>
+                    </div>    
+                </div>
+            </div> 
+            
+            <!--*****************************-->
+            <!-----------VG SECTION------------>
+            <!--*****************************-->
+            <div class = "section" id = "project-work">
+                <div class="all-project-panels">
+                    <div class = "content-Container">
+                        <div class ="project-panel-wrapper">
+                            <div class = "project-panel-outline">
+                                <div class = "project-panel" type = "button" id = "panelButtonB" data-target="#infoGame1">
+                                    <g class = "project-name">Red Rock Farmer</g>
+                                    <img src="/RedRockFarmer.png" id = "panelImages" class = "game-Image">
+                                    
+                                </div>
+                            </div>                     
+                            <div class = "skills-container" id = "redRockDuties">
+                                <div class = "skill" id = "cSharp">C#</div>
+                                <div class = "skill" id = "unity">unity</div>
+                                <div class = "skill" id = "max">3dsMax</div>
+                                <div class = "skill" id = "photoshop">photoshop</div>
+                            </div>
+                        </div>
+                        <div class = "project-Desc"><p>
+                            
+                            <img src="/bulletPoints.png" class = "bullet-Icon">  &nbsp; 
+                            Written in C# using <b>Unity Library</b><br>
+
+                            <img src="/bulletPoints.png" class = "bullet-Icon">  &nbsp; <b>Deep</b> Inventory  System<br>
+
+                            <img src="/bulletPoints.png" class = "bullet-Icon">  &nbsp; Art Design and Assets<br>
+
+                            <img src="/bulletPoints.png" class = "bullet-Icon">  &nbsp; <b>User-Friendly</b> UI/UX Interface<br>
+
+                            <img src="/bulletPoints.png" class = "bullet-Icon">  &nbsp; <b>Flexible Class Composition</b>, <br> 
+                            &nbsp; &nbsp; &nbsp; Easy to Update<br>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class = "content-Container">
+                        <div class ="project-panel-wrapper">
+                            <div class = "project-panel-outline">
+                                <div class = "project-panel" type = "button" id = "panelButtonB"  data-target="#infoGame2">
+                                    <g class = "project-name">Red Rock Farmer</g>
+                                    <img src="/RedRockFarmer.png" id = "panelImages" class = "game-Image">
+                                </div>
+                            </div>                     
+                            <div class = "skills-container" id = "redRockDuties">
+                                <div class = "skill" id = "cSharp">C#</div>
+                                <div class = "skill" id = "unity">unity</div>
+                                <div class = "skill" id = "max">3dsMax</div>
+                                <div class = "skill" id = "photoshop">photoshop</div>
+                            </div>
+                        </div>
+                        <div class = "project-Desc">
+                            <p>
+                                <img src="/bulletPoints.png" class = "bullet-Icon">  &nbsp; Written in C#, including <b>Linq and <br> 
+                                &nbsp; &nbsp; &nbsp; Unity Libraries</b><br>
+                                <img src="/bulletPoints.png" class = "bullet-Icon">  &nbsp; <b>Deep</b> Inventory  System<br>
+                                <img src="/bulletPoints.png" class = "bullet-Icon">  &nbsp; 16-PPU Grid Based Art Design<br> 
+                                &nbsp; &nbsp; &nbsp; and Assets<br>
+                                <img src="/bulletPoints.png" class = "bullet-Icon">  &nbsp; <b>User-Friendly</b> UI/UX Interface<br>
+                                <img src="/bulletPoints.png" class = "bullet-Icon">  &nbsp; <b>Flexible Class Composition</b>
+                            </p>
+                        </div>
+                    </div>
+                </div> 
+                <p>&darr; Be sure to Check out my GitHub Algorithms here &darr;</p>
+                <div class = "subsection-footer">
+                    <button class ="social-link-button" id="gitHub-footer-wrapper" index="0" onclick="window.location.href = 'https://github.com/joeHogan23'"><img src ="/gitHubLogoFooter.png" class = "social-thumbnail" id = "gitHub-icon-footer">
+                        <div class = "color-overlay"><a class = "logo-overlay-container"><img src="/GitHubLogo.png"></a>
+                        </div>
+                    </button>
+                </div>
+            </div>
+            <!--******************-->
+            <!--END VG SECTION------>
+            <!--******************-->      
+            
+            <!--*****************************-->
+            <!-----------GD SECTION------------>
+            <!--*****************************-->
+            <div>
+                <div class = "section-header" id = "gdHeader"><h2>Graphic Design</h2></div>
+                <div class = "section" id = "graphic-design-section">
+                    <div class = "jcarousel-container-outer">
+                        <div class = "jcarousel-container-inner">
+                            <a href="#" class="jcarousel-control-prev">                           
+                                <a href="#" class="arrow-wrapper" id = "arrow-prev"><img class= "arrow-Button"src="/arrowButton.png"></a></a>
+
+                            <div class="jcarousel-wrapper">
+                                <div class ="jcarousel">
+                                    <ul>
+                                        <li><div class="image-wrapper"><img src ="/RedRockFarmer.PNG" alt="Image 1"></div></li>
+                                        <li><div class="image-wrapper"><img src ="/RedRockFarmer.PNG" alt="Image 1"></div></li>
+                                        <li><div class="image-wrapper"><img src ="/RedRockFarmer.PNG" alt="Image 1"></div></li>
+                                        <li><div class="image-wrapper"><img src ="/RedRockFarmer.PNG" alt="Image 1"></div></li>
+                                        <li><div class="image-wrapper"><img src ="/RedRockFarmer.PNG" alt="Image 1"></div></li>
+                                        <li><div class="image-wrapper"><img src ="/resumeIcon.png" alt="Image 1"></div></li>
+                                    </ul>
+
+
+
+                                </div>
+                            
+                                <!--<p class="jcarousel-pagination"></p>-->
+
+                            </div>
+                            <a class="jcarousel-control-next">  
+                                <a href="#" class="arrow-wrapper" id = "arrow-next"><img class= "arrow-Button"src="/arrowButton.png"></a></a>
+                         </div>
+                    </div>
+                </div>
+            </div>
+            <!--******************-->
+            <!--END GD SECTION------>
+            <!--******************-->
+            <div class = "section-header" id = "aboutHeader"><h2>About</h2></div>
+            
+            <div class = "section" id = "about">        
+                <p class = "text" id = about-text >
+                    I started my professional career as a Graphics Designer, Animator, and Video Editor prior to programming. I'm an obsessive problem-solver, and since delving into the world of Programming, I've found there's no better place to create and find challenges in search of a solution. I'm passionate and proud of my work over the last 2 years, creating several launch-worthy applications, and earning recognition for my work from my peers.  
+                </p>
+            </div>          
+        </div>
+        
+        <div id = "contact">
+            <h2>Contact</h2>
+            <p>You can reach me at the email below and I'll reply as soon as possible. Feel free to message me on <b>linkedIn</b>, and be sure to check out my other social profiles for more personal and professional background!</p>
+            
+            <div class ="notification" id ="notification-email-copy">
+                <p><b>Copied to Clipboard!</b></p>
+                <img src="/Notification-Bubble.png">
+            </div>
+            <button id = "email-container" onclick="copyToClipboard('email-info')">
+                <div class = "email-row-element" id = "email-logo-container">                
+                    <img src ="/email-icon.png">
+                </div>  
+                <div class = "email-row-element" id = "email-info"><p><b>joesierejko@rocketmail.com</b></p></div>        
+            </button>
+
+            <div class = "social-bar"  id ="contact-social-bar">
+                <!--GitHub Button-->
+                    <button class ="social-link-button" index="0" onclick="window.location.href = 'https://github.com/joeHogan23'">
+                        <img src ="/GitHubLogoSquare.png" class = "social-thumbnail" id = "gitHub-icon">
+                        
+                        <div class = "color-overlay" id = "overlay-gitHub"><a class = "logo-overlay-container"><img src="/GitHubLogo.png"></a>
+                        </div>
+                    </button>
+                
+                <!--itch.io Button-->
+                    <button class ="social-link-button" index="1" onclick="window.location.href = 'https://js-robodojo.itch.io/'">
+                        <img src ="/itchIconSquare.png" class = "social-thumbnail" id = "itch-Icon">
+                        
+                        <div class = "color-overlay" id = "overlay-itch"><a class = "logo-overlay-container"><img src="/itchIcon.png"></a>
+                        </div>
+                    </button>   
+                
+                <!--LinkedIn Button-->
+                    <button class ="social-link-button" index="2" onclick="window.location.href = 'https://www.linkedin.com/in/josephsierejko/'">
+                        <img src ="/LinkedinLogoSquare.png" class = "social-thumbnail" id = "linkedin-Icon">
+                        <div class = "color-overlay" id = "overlay-linkedin"><a class = "logo-overlay-container"><img src="/LinkedinLogo.png"></a>
+                        </div>
+                    </button>
+            </div>
+        </div>
+    </body>
+    <footer>
+        Copyright &copy; 2019 by Joseph Sierejko | Website is Original and Developed by Me :-)
+    </footer>
+</html>

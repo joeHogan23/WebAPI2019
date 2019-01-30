@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/jquery.color-animation/1/mainfile"></script>
+        <link rel="stylesheet" type="text/css" href="/appstylesheet.css"/>  
+        <script type = "text/javascript" src = "/client.js"></script>
+        <link href="https://fonts.googleapis.com/css?family=Average+Sans|Raleway" rel="stylesheet">
+        <title>Game List App Page</title>
+</head>
+<body>
+        <div class ="navbar-container">  
+                <nav class = "navbar navbar-inverse">
+                    <div class = "container-fluid" >    
+                        <div class = "navbar-header">
+                            <b class = "navbar-brand" id = "name">Joseph Sierejko</b>
+                            <button type = "button" class = "navbar-toggle" id = "nav-tab" data-toggle = "collapse" data-target="#mynavbar">
+                                <span class = "icon-bar"></span>
+                                <span class = "icon-bar"></span>
+                                <span class = "icon-bar"></span>
+                            </button>
+                        </div>
+                        <div class = "collapse navbar-collapse" id ="mynavbar">   
+                            <ul class = "nav navbar-nav" id = "menuItems">
+        
+                                <li><a class = "btn"  href ="public/portfolio/portfoliopage">Portfolio</a></li>
+        
+                                <li><a class = "btn"  href ="entrySchema">Enter Game</a></li>
+        
+                                <li><a class = "btn"  href ="entries">See Da List</a></li>
+                            </ul>
+                        </div>    
+                    </div>
+                </nav>
+            </div>
+        <h1>Here is the list</h1>
+        <div id = "entries-list">
+            
+        </div>
+        <script>
+            fetch('/getdata')
+            .then(function(response) {
+                return response.json();    
+            })
+            .then(function(entries) {
+                console.log(JSON.stringify(entries));
+                entries.entries.forEach(function(entry){
+                    document.getElementById("entries-list").innerHTML +=
+                    "<div><p>Game: " + entry.title + "</p><p>Genre: " + entry.genre + "</p><p>Date: " + entry.date +"</p><br></div>";  
+                });
+            });
+        </script>
+    </body>
+</html>
